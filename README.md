@@ -48,7 +48,7 @@ _The following specs are included in the program:_
  - Example Out: ananaB
  - Exception: Chin (would become hinC)
 
-* The program adds "ay" to a multi-letter word that has just gotten a consonant added at the end.
+* The program adds "ay" to a multi-letter word that has just gotten a consonant added at the end. - X
  - Example In: ananaB
  - Example Out: ananaBay
 
@@ -77,6 +77,8 @@ _The following specs are included in the program:_
 * Pretty up the sentence
 
 * Output sentence in pig Latin
+
+* Refactor code
 
 ## Setup/Installation Requirements
 

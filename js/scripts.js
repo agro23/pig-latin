@@ -29,6 +29,11 @@ function addWayToVowel(mySentence){
     }
   }
 
+function addAyToSentence (mySentence){
+  // adds 'ay' to the end of the sentence
+  // sentence is already formatted
+  return mySentence + "ay";
+}
 
  // function addAyToConsonant(mySentence){
  //    var x = mySentence.slice(0, 1);
@@ -54,8 +59,8 @@ $(document).ready(function() {
     event.preventDefault();
     sentence = $('#sentence').val();
     // sentence = addWayToVowel(sentence); // changes sentence by adding "way" to the end if it starts with vowel
-    sentence = moveConsonantToEnd(sentence); // changes sentence by adding "ay" to the end if it starts with consonant
-
+    // sentence = moveConsonantToEnd(sentence); // changes sentence by adding "ay" to the end if it starts with consonant
+    sentence = addAyToSentence(moveConsonantToEnd(sentence));
   //  parseSentence(sentence); // doesn't have a return value yet
 
 
