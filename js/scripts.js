@@ -41,7 +41,10 @@ function moveConsonantsToEnd(myWord){
   console.log("x = " + x);
   for (i= 0; i<x.length; i++){
     var y = x[i].toUpperCase();
-    if ( ! ( (y === "A") || (y === "E") || (y === "I") || (y === "O") || (y === "U") ) ) {
+    if (y === "Q" && x[i+1] === ( "u" || "U") ) {
+      cons = cons + x[0] + x[1];
+      break;
+    } else if ( ! ( (y === "A") || (y === "E") || (y === "I") || (y === "O") || (y === "U") ) ) {
       cons = cons + x[i]; // add to sequence of consonants
     } else {
       break;
@@ -80,7 +83,6 @@ $(document).ready(function() {
     // sentence = addAyToSentence(moveConsonantToEnd(sentence));
   //  parseSentence(sentence); // doesn't have a return value yet
     sentence = moveConsonantsToEnd(sentence);
-
 
     $('#output').text(sentence);
     // eventually we will append to panel and the show() it.

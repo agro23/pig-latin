@@ -56,17 +56,17 @@ _The following specs are included in the program:_
   - Example In: Chin
   - Example Out: hinC
 
-* The program adds "ay" to a multi-letter word that has just gotten consecutive consonants added at the end. - (implicit in step above)
+* The program adds "ay" to a multi-letter word that has just gotten consecutive consonants added at the end. - X (implicit in step above)
   - Example In: inCh
   - Example Out: inChay
 
-* The program checks if the word starts with "qu" and moves it to the end.
- - Example In: queen
- - Example Out: eenqu
+* The program checks if the word starts with "qu" and moves it to the end. - X
+  - Example In: queen
+  - Example Out: eenqu
 
-* The program adds "ay" to a multi-letter word that have just gotten consecutive consonants added at the end.
- - Example In: eenqu
- - Example Out: eenquay
+* The program adds "ay" to a multi-letter word that have just gotten consecutive consonants added at the end. - (implicit in the step above)
+  - Example In: eenqu
+  - Example Out: eenquay
 
 * The program takes in a sentence and applies the above rules to each word.
  - Example In: I am Oliver Queen.
