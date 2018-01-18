@@ -35,6 +35,23 @@ function addAyToSentence (mySentence){
   return mySentence + "ay";
 }
 
+function moveConsonantsToEnd(myWord){
+  var cons = "";
+  var x = myWord.split("");
+  console.log("x = " + x);
+  for (i= 0; i<x.length; i++){
+    var y = x[i].toUpperCase();
+    if ( ! ( (y === "A") || (y === "E") || (y === "I") || (y === "O") || (y === "U") ) ) {
+      cons = cons + x[i]; // add to sequence of consonants
+    } else {
+      break;
+    }
+  }
+  console.log("cons lenth: " + cons.length);
+  return myWord.slice(cons.length, myWord.length) + cons + "ay"; // send the sentence back with 'ay' at the end
+ }
+
+
  // function addAyToConsonant(mySentence){
  //    var x = mySentence.slice(0, 1);
  //    alert ("X = " + x);
@@ -60,8 +77,9 @@ $(document).ready(function() {
     sentence = $('#sentence').val();
     // sentence = addWayToVowel(sentence); // changes sentence by adding "way" to the end if it starts with vowel
     // sentence = moveConsonantToEnd(sentence); // changes sentence by adding "ay" to the end if it starts with consonant
-    sentence = addAyToSentence(moveConsonantToEnd(sentence));
+    // sentence = addAyToSentence(moveConsonantToEnd(sentence));
   //  parseSentence(sentence); // doesn't have a return value yet
+    sentence = moveConsonantsToEnd(sentence);
 
 
     $('#output').text(sentence);

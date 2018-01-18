@@ -36,29 +36,29 @@ _The following specs are included in the program:_
   - Example Output: iway
 
 * The program adds "ay" to a single-letter word beginning with a consonant - X
- - Example Input: c
- - Example Output: cay
+  - Example Input: c
+  - Example Output: cay
 
 * The program adds "way" to a multi-letter word beginning with a vowel. - X (implicit in step 2)
- - Example In: apple
- - Example Out: appleway
+  - Example In: apple
+  - Example Out: appleway
 
 * The program moves the consonant to the end of the word if it starts with a consonant - X
- - Example In: Banana
- - Example Out: ananaB
- - Exception: Chin (would become hinC)
+  - Example In: Banana
+  - Example Out: ananaB
+  - Exception: Chin (would become hinC)
 
 * The program adds "ay" to a multi-letter word that has just gotten a consonant added at the end. - X
- - Example In: ananaB
- - Example Out: ananaBay
+  - Example In: ananaB
+  - Example Out: ananaBay
 
-* The program moves consecutive consonants to the end of the word
- - Example In: Chin
- - Example Out: hinC
+* The program moves consecutive consonants to the end of the word - X
+  - Example In: Chin
+  - Example Out: hinC
 
-* The program adds "ay" to a multi-letter word that has just gotten consecutive consonants added at the end.
- - Example In: inCh
- - Example Out: inChay
+* The program adds "ay" to a multi-letter word that has just gotten consecutive consonants added at the end. - (implicit in step above)
+  - Example In: inCh
+  - Example Out: inChay
 
 * The program checks if the word starts with "qu" and moves it to the end.
  - Example In: queen
