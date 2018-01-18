@@ -12,11 +12,11 @@ _Rules for Pig Latin from the assignment:_
 
 * First, here are the rules of Pig Latin:
 
-* For words beginning with a vowel, add "way" to the end. X
+* For words beginning with a vowel, add "way" to the end.
 
-* For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay". X
+* For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
 
-* If the first consonants include "qu", move the "u" along with the "q". X
+* If the first consonants include "qu", move the "u" along with the "q".
   - Don't forget about words like "squeal" where "qu" doesn't come first!
 
 * For words beginning with "y", treat "y" as a consonant.
@@ -32,8 +32,8 @@ _The following specs are included in the program:_
   - Example Output: 3
 
 * The program adds "way" to single-letter words beginning with a vowel.
- - Example Input: i
- - Example Output: iway
+  - Example Input: i
+  - Example Output: iway
 
 * The program adds "ay" to a single-letter word beginning with a consonant
  - Example Input: c
@@ -74,6 +74,9 @@ _The following specs are included in the program:_
  - Example In: This is a test of the program
  - Example Out: isThay isway away esttay ofway ethay ogrampray
 
+* Pretty up the sentence
+
+* Output sentence in pig Latin
 
 ## Setup/Installation Requirements
 
