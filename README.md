@@ -28,8 +28,8 @@ _The following specs are included in the program:_
 * Take a sentence from the user, translate it into pig latin, and display it back to them.
 
 * The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
- - Example Input: 3
- - Example Output: 3
+  - Example Input: 3
+  - Example Output: 3
 
 * The program adds "way" to single-letter words beginning with a vowel.
  - Example Input: i
